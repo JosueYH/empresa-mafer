@@ -88,7 +88,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
-              <span class="menu-title">Dashboard</span>
+              <span class="menu-title">Principal</span>
             </a>
           </li>
           <li class="nav-item menu-items">
@@ -144,7 +144,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-security"></i>
               </span>
-              <span class="menu-title">User Pages</span>
+              <span class="menu-title">Páginas de Usuario</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="auth">
@@ -152,8 +152,8 @@
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Iniciar Sesión </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registro </a></li>
               </ul>
             </div>
           </li>
@@ -181,13 +181,13 @@
             <ul class="navbar-nav w-100">
               <li class="nav-item w-100">
                 <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                  <input type="text" class="form-control" placeholder="Search products">
+                  <input type="text" class="form-control" placeholder="Buscar Productos">
                 </form>
               </li>
             </ul>
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item dropdown d-none d-lg-block">
-                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Crear un Nuevo Proyecto</a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
                   <h6 class="p-3 mb-0">Projects</h6>
                   <div class="dropdown-divider"></div>
@@ -370,18 +370,22 @@
                 <div class="card corona-gradient-card">
                   <div class="card-body py-0 px-0 px-sm-3">
                     <div class="row align-items-center">
+                      
+                      <!--Anuncio-->
                       <div class="col-4 col-sm-3 col-xl-2">
                         <img src="assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="">
                       </div>
                       <div class="col-5 col-sm-7 col-xl-8 p-0">
-                        <h4 class="mb-1 mb-sm-0">Want even more features?</h4>
-                        <p class="mb-0 font-weight-normal d-none d-sm-block">Check out our Pro version with 5 unique layouts!</p>
+                        <h4 class="mb-1 mb-sm-0">Bienvenido al Sistema de Administración MAFER!</h4>
+                        <p class="mb-0 font-weight-normal d-none d-sm-block"></p>
                       </div>
                       <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
                         <span>
-                          <a href="https://www.bootstrapdash.com/product/corona-admin-template/" target="_blank" class="btn btn-outline-light btn-rounded get-started-btn">Upgrade to PRO</a>
+                          <a href="https://www.bootstrapdash.com/product/corona-admin-template/" target="_blank" class="btn btn-outline-light btn-rounded get-started-btn">ACTUALIZAR</a>
                         </span>
                       </div>
+                      <!--Anuncio cerrado-->
+
                     </div>
                   </div>
                 </div>
@@ -473,7 +477,7 @@
               <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Transaction History</h4>
+                    <h4 class="card-title">Historia de Transacción</h4>
                     <canvas id="transaction-history" class="transaction-chart"></canvas>
                     <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                       <div class="text-md-center text-xl-left">
@@ -1030,7 +1034,7 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © mafer.com 2024</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
             </div>
           </footer>
@@ -1059,7 +1063,7 @@
     <script src="assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/dashboard.js"></script> <!--Grafico de Historia de Transaccion-->
     <!-- End custom js for this page -->
   </body>
-</html>
+</html> 
