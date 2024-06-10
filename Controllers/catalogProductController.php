@@ -1,20 +1,17 @@
 <?php
-require_once '../Models/Product/catalogProductModel.php';
+// controllers/ProductoController.php
+require_once '../Models/Product/catalogProductModel.php';  // Incluir el modelo del producto
 
-class ProductController {
-    private $productModel;
+class ProductoController {
+    private $model;
 
     public function __construct() {
-        $this->productModel = new Product();
+        $this->model = new ProductoModel();
     }
 
-    public function displayProducts() {
-        $products = $this->productModel->getProducts();
-        require_once '../views/product_view.php';
+    public function index() {
+        $productos = $this->model->obtenerProductos();
+        require_once '../View/ver.html';
     }
 }
-
-// Crear una instancia del controlador y llamar al método para mostrar productos
-$controller = new ProductController();
-$controller->displayProducts();
 ?>
