@@ -32,7 +32,7 @@ CREATE TABLE `tProductos` (
   `nombreProducto` varchar(50) NOT NULL,
   `categoriaProducto` varchar(50) NOT NULL,
   `tipoProducto` varchar(50) NOT NULL,
-  `precioProducto` int(255) NOT NULL
+  `precioProducto` int(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --

@@ -1,6 +1,5 @@
 <?php
 
-
 /*$servername = "localhost";
 $username = "root";
 $password = "";
@@ -28,10 +27,8 @@ function connectionDatabase() {
     // Verificar conexión
     if ($conn->connect_error) {
         die("La conexión ha fallado: " . $conn->connect_error);
-        echo "La conexión ha fallado";
     }
     return $conn;
 }
-
 
 ?>

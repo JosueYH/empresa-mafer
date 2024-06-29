@@ -1,13 +1,18 @@
 <?php
-require_once 'Database/connectionDatabase.php';
-//require_once '../../Database/connectionDatabase.php';
+require_once '../../Database/connectionDatabase.php';
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 class catalogProductModel {
     private $db;
 
     public function __construct() {
         $this->db = connectionDatabase();
+        if ($this->db->connect_error) {
+            die("La conexión ha fallado: " . $this->db->connect_error);
+        }
     }
 
     public function obtenerProductos() {
@@ -29,7 +34,6 @@ class catalogProductModel {
         // Imprimir los productos para depuración
         print_r($productos);
         return $productos;
-        //return $productos;
     }
 }
 ?>
