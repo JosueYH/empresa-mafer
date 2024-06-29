@@ -1,16 +1,23 @@
 <?php
-require_once '../../Database/connectionDatabase.php';
+require_once 'Database/connectionDatabase.php';
+//require_once '../../Database/connectionDatabase.php';
 
-class ProductoModel {
+
+class catalogProductModel {
     private $db;
 
     public function __construct() {
-        $this->db = connect();
+        $this->db = connectionDatabase();
     }
 
     public function obtenerProductos() {
-        $sql = "SELECT IdProducto, nombreProducto, tipoProducto, precioProducto FROM productos";
+        $sql = "SELECT IdProducto, nombreProducto, categoriaProducto, tipoProducto, precioProducto FROM tProductos";
         $result = $this->db->query($sql);
+
+        // Verificar si la consulta se ejecutó correctamente
+        if (!$result) {
+            die('Error en la consulta: ' . $this->db->error);
+        }
 
         $productos = [];
         if ($result->num_rows > 0) {
@@ -18,7 +25,11 @@ class ProductoModel {
                 $productos[] = $row;
             }
         }
+
+        // Imprimir los productos para depuración
+        print_r($productos);
         return $productos;
+        //return $productos;
     }
 }
 ?>

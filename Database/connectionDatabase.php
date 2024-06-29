@@ -1,5 +1,7 @@
 <?php
-$servername = "localhost";
+
+
+/*$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "maferDatabase";
@@ -12,4 +14,24 @@ if ($conn->connect_error) {
     die("La conexión ha fallado: " . $conn->connect_error);
 }
 echo "Conexión exitosa";
+*/
+
+function connectionDatabase() {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "maferDatabase";
+
+    // Crear conexión
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Verificar conexión
+    if ($conn->connect_error) {
+        die("La conexión ha fallado: " . $conn->connect_error);
+        echo "La conexión ha fallado";
+    }
+    return $conn;
+}
+
+
 ?>

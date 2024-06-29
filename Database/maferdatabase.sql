@@ -27,9 +27,10 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `productos`
 --
 
-CREATE TABLE `productos` (
+CREATE TABLE `tProductos` (
   `IdProducto` int(9) NOT NULL,
   `nombreProducto` varchar(50) NOT NULL,
+  `categoriaProducto` varchar(50) NOT NULL,
   `tipoProducto` varchar(50) NOT NULL,
   `precioProducto` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -38,10 +39,10 @@ CREATE TABLE `productos` (
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`IdProducto`, `nombreProducto`, `tipoProducto`, `precioProducto`) VALUES
-(1, 'Yogurt', 'A', 10),
-(2, 'HGF', 'B', 20),
-(3, 'HGD', 'C', 30);
+INSERT INTO `tProductos` (`IdProducto`, `nombreProducto`, `categoriaProducto`, `tipoProducto`, `precioProducto`) VALUES
+(1, 'Yogurt', 'AA', 'X', 10),
+(2, 'HGF', 'BC', 'Y', 20),
+(3, 'HGD', 'CC', 'Z', 30);
 
 --
 -- Índices para tablas volcadas
@@ -50,7 +51,7 @@ INSERT INTO `productos` (`IdProducto`, `nombreProducto`, `tipoProducto`, `precio
 --
 -- Indices de la tabla `productos`
 --
-ALTER TABLE `productos`
+ALTER TABLE `tProductos`
   ADD PRIMARY KEY (`IdProducto`);
 COMMIT;
 
