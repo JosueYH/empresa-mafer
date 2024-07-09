@@ -1,34 +1,26 @@
 <?php
+    class connectionDatabase {
+        private $host = "localhost";
+        private $dbname = "prueba";
+        private $username = "root";
+        private $password = "";
+        
+        public function conexion() {
+            // Crear una nueva conexión MySQLi
+            $conn = new mysqli($this->host, $this->username, $this->password, $this->dbname);
 
-/*$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "maferDatabase";
-
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error) {
-    die("La conexión ha fallado: " . $conn->connect_error);
-}
-echo "Conexión exitosa";
-*/
-
-function connectionDatabase() {
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "maferDatabase";
-
-    // Crear conexión
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verificar conexión
-    if ($conn->connect_error) {
-        die("La conexión ha fallado: " . $conn->connect_error);
+            // Verificar si hay un error en la conexión
+            if ($conn->connect_error) {
+                return "La Conexión ha fallado: ".$conn->connect_error; //Retornar el mensaje de error si hay problemas de conexión
+            } else {
+                // Retornar el objeto MySQLi si la conexión es exitosa
+                return $conn;
+                //echo "La conexión se realizó de manera exitosa!";
+            }
+        }
     }
-    return $conn;
-}
 
+// Descomentar para probar la conexión
+//$obj = new connectionDatabase();
+//print_r($obj->conexion());
 ?>

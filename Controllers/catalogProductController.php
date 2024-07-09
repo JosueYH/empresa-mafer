@@ -10,7 +10,7 @@ class catalogProductController {
 
     public function index() {
         $productos = $this->model->obtenerProductos();
-        require_once '../View/ver.html';
+        require_once '../View/ver.php';
     }
 }
 ?>
