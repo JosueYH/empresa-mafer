@@ -1,7 +1,7 @@
 <?php
     class connectionDatabase {
         private $host = "localhost";
-        private $dbname = "prueba";
+        private $dbname = "maferDatabase";
         private $username = "root";
         private $password = "";
         

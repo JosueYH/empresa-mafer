@@ -1,17 +1,21 @@
 <?php
-require_once '../../Database/connectionDatabase.php';
 
-ini_set('display_errors', 1);
+/*ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+*/
+
+require_once '../../database/connectionDatabase.php';
 
 class catalogProductModel {
     private $db;
 
     public function __construct() {
-        $this->db = connectionDatabase();
+        $database = new connectionDatabase(); //Instanciamos
+        $this->db = $database->conexion(); //Accedemos al método o a la función
+        
         if ($this->db->connect_error) {
-            die("La conexión ha fallado: " . $this->db->connect_error);
+            die("La conexión ha fallado: ".$this->db->connect_error);
         }
     }
 
@@ -31,9 +35,16 @@ class catalogProductModel {
             }
         }
 
-        // Imprimir los productos para depuración
-        print_r($productos);
+        // Retornar los productos obtenidos
         return $productos;
     }
 }
+
+// Bloque para prueba directa al cargar el archivo en el navegador
+$modeloProductos = new catalogProductModel();
+$productos = $modeloProductos->obtenerProductos();
+
+echo "<pre>";
+print_r($productos);
+echo "</pre>";
 ?>
