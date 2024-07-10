@@ -1,30 +1,30 @@
-<?php include('view/head/header.php'); ?>
+<?php include('../../head/header.php'); ?>
 
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            
-            <!--Inicio Tabla de Agregar Productos-->
+
+            <!--Inicio de la Formulario Usuario-->
             <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Ingreso de Datos del Producto</h4>
+                  <h4 class="card-title">Usuarios del Sistema</h4>
                   <form class="form-sample">
-                    <p class="card-description"></p>
+                    <p class="card-description"> Agregar nuevos Usuarios </p>
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Producto</label>
+                          <label class="col-sm-3 col-form-label">Nombre</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="Escribe el nombre del Producto" />
+                            <input type="text" class="form-control" />
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Precio (S/)</label>
+                          <label class="col-sm-3 col-form-label">Fecha de Nacimiento</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="Escribe el Precio del Producto" />
+                            <input class="form-control" placeholder="dd/mm/yyyy" />
                           </div>
                         </div>
                       </div>
@@ -32,25 +32,17 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Categoría</label>
+                          <label class="col-sm-3 col-form-label">Apellidos</label>
                           <div class="col-sm-9">
-                            <select class="form-control">
-                              <option value="" selected >__ Seleccionar __</option>
-                              <option>Yogurt</option>
-                              <option>Helados</option>
-                              <option>C</option>
-                              <option>D</option>
-                              <option>E</option>
-                            </select>
+                            <input type="text" class="form-control" />
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Campo!!!</label>
+                          <label class="col-sm-3 col-form-label">Teléfono</label>
                           <div class="col-sm-9">
-                            <input class="form-control" placeholder="Realice una Descripción del Producto" />
-                            <!--<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>-->
+                            <input type="text" class="form-control" />
                           </div>
                         </div>
                       </div>
@@ -58,101 +50,168 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Tipo</label>
+                          <label class="col-sm-3 col-form-label">Gender</label>
                           <div class="col-sm-9">
                             <select class="form-control">
-                              <option value="" selected >__ Seleccionar __</option>
-                              <!--<option value="" selected disabled>__ Seleccione __</option> -->
-                              <option>A</option>
-                              <option>B</option>
-                              <option>C</option>
-                              <option>D</option>
-                              <option>E</option>
+                              <option>Male</option>
+                              <option>Female</option>
                             </select>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Radio Botón</label>
+                          <label class="col-sm-3 col-form-label">Date of Birth</label>
+                          <div class="col-sm-9">
+                            <input class="form-control" placeholder="dd/mm/yyyy" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Rol</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option value="" selected >__ Seleccionar __</option>
+                              <option>Usuario</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Sexo</label>
                           <div class="col-sm-4">
                             <div class="form-check">
                               <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked> Free </label>
+                                <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked> Masculino </label>
                             </div>
                           </div>
                           <div class="col-sm-5">
                             <div class="form-check">
                               <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2"> Professional </label>
+                                <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2"> Femenino </label>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
+                    <p class="card-description"> Dirección </p>
                     <div class="row">
-                      <div class="col-12 grid-margin stretch-card">
-                        <div class="card">
-                          <div class="card-body">
-                            <p class="card-description"> Descripción del Producto </p>
-                            <form class="forms-sample">
-                              <div class="form-group">
-                                <textarea class="form-control" id="exampleTextarea1" rows="6"></textarea>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <p class="card-description"> Imagen del Producto </p>
-                    <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label"></label>
+                          <label class="col-sm-3 col-form-label">Departamento</label>
                           <div class="col-sm-9">
-                            <input type="file" id="imagenProducto" accept="image/*" required>
+                            <select class="form-control">
+                              <option value="" selected >__ Seleccionar __</option>
+                              <option>Apurímac</option>
+                              <option>Cusco</option>
+                              <option>Ayacucho</option>
+                            </select>
                           </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mr-2">AGREGAR</button>
-                        <button class="btn btn-dark">CANCELAR</button>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Email</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
                       </div>
                     </div>
-
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Provincia</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option value="" selected >__ Seleccionar __</option>
+                              <option>Aymaraes</option>
+                              <option>Abancay</option>
+                              <option>Grau</option>
+                              <option>Andahuaylas</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Contraseña</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Distrito</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option value="" selected >__ Seleccionar __</option>
+                              <option>Lucre</option>
+                              <option>Tintay</option>
+                              <option>Chacña</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Country****</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>America</option>
+                              <option>Italy</option>
+                              <option>Russia</option>
+                              <option>Britain</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p></p>
+                    <button type="submit" class="btn btn-primary mr-2">CREAR</button>
+                    <button class="btn btn-dark">CANCELAR</button>
                   </form>
                 </div>
               </div>
             </div>
-            <!--Fin tabla de Agregar Productos-->
+            <!--Fin del formulario Usuario-->
 
             <div class="page-header">
-
               <!--Inicio de la Tabla-->
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <!--</p>-->
-                    <p>Lista de Productos</p>
-                    <p></p>
+                    </p>
+                    <p>Lista de Usuarios</p>
                     <div class="form-group">
                       <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Escribe el nombre del Producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" placeholder="Escribe el nombre del Usuario" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                           <button class="btn btn-sm btn-primary" type="button">BUSCAR</button>
                         </div>
                       </div>
                     </div>
+
                     <div class="table-responsive">
                       <table class="table table-striped">
                         <thead>
                           <tr>
-                            <th> Productos </th>
-                            <th> Categoria </th>
-                            <th> Tipo </th>
-                            <th> Precio </th>
-                            <th> Deadline </th>
-                            <th> Estados </th>
+                            <th> Nombres y Apellidos </th>
+                            <th> Edad </th>
+                            <th> Sexo </th>
+                            <th> Teléfono </th>
+                            <th> Email </th>
+                            <th> Departamento </th>
+                            <th> Provincia </th>
+                            <th> Distrito </th>
+                            <th> Rol </th>
                           </tr>
                         </thead>
                         <tbody>
@@ -272,12 +331,69 @@
             </div>
             <!--En teoría sería desde aquí-->
 
+            <div class="row">
+              
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Hoverable Table</h4>
+                    <p class="card-description"> Add class <code>.table-hover</code>
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>User</th>
+                            <th>Product</th>
+                            <th>Sale</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Jacob</td>
+                            <td>Photoshop</td>
+                            <td class="text-danger"> 28.76% <i class="mdi mdi-arrow-down"></i></td>
+                            <td><label class="badge badge-danger">Pending</label></td>
+                          </tr>
+                          <tr>
+                            <td>Messsy</td>
+                            <td>Flash</td>
+                            <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>
+                            <td><label class="badge badge-warning">In progress</label></td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Premier</td>
+                            <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>
+                            <td><label class="badge badge-info">Fixed</label></td>
+                          </tr>
+                          <tr>
+                            <td>Peter</td>
+                            <td>After effects</td>
+                            <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>
+                            <td><label class="badge badge-success">Completed</label></td>
+                          </tr>
+                          <tr>
+                            <td>Dave</td>
+                            <td>53275535</td>
+                            <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>
+                            <td><label class="badge badge-warning">In progress</label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © empresa-mafer.com 2024</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
             </div>
           </footer>
@@ -285,4 +401,4 @@
         </div>
         <!-- main-panel ends -->
 
-<?php include('view/head/footer.php'); ?>
+<?php include('../../head/footer.php'); ?>

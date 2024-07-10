@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 */
 
 //require_once $_SERVER['DOCUMENT_ROOT'] . '../../database/connectionDatabase.php';
-require_once '../../database/connectionDatabase.php';
+require ('../../database/connectionDatabase.php');
 
 class catalogProductModel {
     private $db;

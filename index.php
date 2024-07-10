@@ -1,4 +1,4 @@
-<?php require_once('view/head/header.php'); ?>
+<?php include('view/head/header.php'); ?>
 
         <!-- partial -->
         <div class="main-panel">
@@ -680,4 +680,4 @@
         </div>
         <!-- main-panel ends -->
 
-<?php require_once('view/head/footer.php'); ?>
+<?php include('view/head/footer.php'); ?>
