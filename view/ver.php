@@ -21,22 +21,28 @@
 </head>
 <body>
     <h1>Lista de Productos</h1>
+    <?php
+    // Añadir depuración 
+    echo "<pre>";
+    var_dump($productos); // Verifica el contenido de $productos
+    echo "</pre>";
+    ?>
     <table>
         <tr>
-            <th>IdProducto</th>
-            <th>Nombre Producto</th>
-            <th>Categoría Producto</th>
-            <th>Tipo Producto</th>
-            <th>Precio Producto</th>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Tipo</th>
+            <th>Precio</th>
         </tr>
         <?php if (!empty($productos)): ?>
-            <?php foreach ($productos as $producto): ?>
+            <?php foreach ($productos as $prod): ?>
                 <tr>
-                    <td><?php echo $producto['IdProducto']; ?></td>
-                    <td><?php echo $producto['nombreProducto']; ?></td>
-                    <td><?php echo $producto['categoriaProducto']; ?></td>
-                    <td><?php echo $producto['tipoProducto']; ?></td>
-                    <td><?php echo $producto['precioProducto']; ?></td>
+                    <td><?php echo $prod['idProducto']; ?></td>
+                    <td><?php echo $prod['nombreProducto']; ?></td>
+                    <td><?php echo $prod['categoriaProducto']; ?></td>
+                    <td><?php echo $prod['tipoProducto']; ?></td>
+                    <td><?php echo $prod['precioProducto']; ?></td>
                 </tr>
             <?php endforeach; ?>
         <?php else: ?>

@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tProductos` (
-  `IdProducto` int(9) NOT NULL,
+  `idProducto` int(9) NOT NULL,
   `nombreProducto` varchar(50) NOT NULL,
   `categoriaProducto` varchar(50) NOT NULL,
   `tipoProducto` varchar(50) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `tProductos` (
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `tProductos` (`IdProducto`, `nombreProducto`, `categoriaProducto`, `tipoProducto`, `precioProducto`) VALUES
+INSERT INTO `tProductos` (`idProducto`, `nombreProducto`, `categoriaProducto`, `tipoProducto`, `precioProducto`) VALUES
 (1, 'Yogurt', 'AA', 'X', 10),
 (2, 'HGF', 'BC', 'Y', 20),
 (3, 'HGD', 'CC', 'Z', 30);

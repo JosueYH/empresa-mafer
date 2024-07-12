@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 //require_once $_SERVER['DOCUMENT_ROOT'] . '../../database/connectionDatabase.php';
 require ('../../database/connectionDatabase.php');
 
-class catalogProductModel {
+class productModel {
     private $db;
 
     public function __construct() {
@@ -21,7 +21,7 @@ class catalogProductModel {
     }
 
     public function obtenerProductos() {
-        $sql = "SELECT IdProducto, nombreProducto, categoriaProducto, tipoProducto, precioProducto FROM tProductos";
+        $sql = "SELECT idProducto, nombreProducto, categoriaProducto, tipoProducto, precioProducto FROM tProductos";
         $result = $this->db->query($sql);
 
         // Verificar si la consulta se ejecutó correctamente
@@ -36,13 +36,12 @@ class catalogProductModel {
             }
         }
 
-        // Retornar los productos obtenidos
-        return $productos;
+        return $productos; // Retornar los productos obtenidos
     }
 }
 
 // Bloque para prueba directa al cargar el archivo en el navegador
-$modeloProductos = new catalogProductModel();
+$modeloProductos = new productModel();
 $productos = $modeloProductos->obtenerProductos();
 
 echo "<pre>";
