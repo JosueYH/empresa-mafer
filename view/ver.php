@@ -22,6 +22,8 @@
 <body>
     <h1>Lista de Productos</h1>
     <?php
+    $productos = isset($productos) ? $productos : [];   // Asegúrate de que $productos está definido y es un array
+
     // Añadir depuración 
     echo "<pre>";
     var_dump($productos); // Verifica el contenido de $productos

@@ -15,8 +15,8 @@ class productController {
 
     public function index() {
         $productos = $this->model->obtenerProductos();
-        require $_SERVER['DOCUMENT_ROOT'].('/empresa-mafer/view/ver.php');
-        //require('../../view/ver.php');
+        //require $_SERVER['DOCUMENT_ROOT'].('/empresa-mafer/view/ver.php');
+        require('../../view/ver.php');
     }
 }
 // Instancia del controlador para probar la funcionalidad
