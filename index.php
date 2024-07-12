@@ -1,4 +1,12 @@
-<?php include('view/head/header.php'); ?>
+<?php 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+//include("public/template/head/header.php"); 
+include $_SERVER['DOCUMENT_ROOT'] .('/empresa-mafer/public/template/head/header.php'); // Ruta absoluta desde la raíz del servidor
+
+?>
 
         <!-- partial -->
         <div class="main-panel">
@@ -11,7 +19,7 @@
                       
                       <!--Anuncio-->
                       <div class="col-4 col-sm-3 col-xl-2">
-                        <img src="Template/template/assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="">
+                        <img src="public/template/assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="">
                       </div>
                       <div class="col-5 col-sm-7 col-xl-8 p-0">
                         <h4 class="mb-1 mb-sm-0">Bienvenido al Sistema de Administración MAFER!</h4>
@@ -147,14 +155,14 @@
                     </div>
                     <div class="row">
                       <div class="col-12">
-                        <div class="preview-list">
-                          <div class="preview-item border-bottom">
-                            <div class="preview-thumbnail">
-                              <div class="preview-icon bg-primary">
+                        <div class="preTemplate/template-list">
+                          <div class="preTemplate/template-item border-bottom">
+                            <div class="preTemplate/template-thumbnail">
+                              <div class="preTemplate/template-icon bg-primary">
                                 <i class="mdi mdi-file-document"></i>
                               </div>
                             </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
+                            <div class="preTemplate/template-item-content d-sm-flex flex-grow">
                               <div class="flex-grow">
                                 <h6 class="preview-subject">Admin dashboard design</h6>
                                 <p class="text-muted mb-0">Broadcast web app mockup</p>
@@ -334,7 +342,7 @@
                               </div>
                             </td>
                             <td>
-                              <img src="assets/images/faces/face1.jpg" alt="image" />
+                              <img src="public/template/assets/images/faces/face1.jpg" alt="image" />
                               <span class="pl-2">Henry Klein</span>
                             </td>
                             <td> 02312 </td>
@@ -355,7 +363,7 @@
                               </div>
                             </td>
                             <td>
-                              <img src="assets/images/faces/face2.jpg" alt="image" />
+                              <img src="public/template/assets/images/faces/face2.jpg" alt="image" />
                               <span class="pl-2">Estella Bryan</span>
                             </td>
                             <td> 02312 </td>
@@ -376,7 +384,7 @@
                               </div>
                             </td>
                             <td>
-                              <img src="assets/images/faces/face5.jpg" alt="image" />
+                              <img src="public/template/assets/images/faces/face5.jpg" alt="image" />
                               <span class="pl-2">Lucy Abbott</span>
                             </td>
                             <td> 02312 </td>
@@ -397,7 +405,7 @@
                               </div>
                             </td>
                             <td>
-                              <img src="assets/images/faces/face3.jpg" alt="image" />
+                              <img src="public/template/assets/images/faces/face3.jpg" alt="image" />
                               <span class="pl-2">Peter Gill</span>
                             </td>
                             <td> 02312 </td>
@@ -418,7 +426,7 @@
                               </div>
                             </td>
                             <td>
-                              <img src="assets/images/faces/face4.jpg" alt="image" />
+                              <img src="public/template/assets/images/faces/face4.jpg" alt="image" />
                               <span class="pl-2">Sallie Reyes</span>
                             </td>
                             <td> 02312 </td>
@@ -448,7 +456,7 @@
                     <div class="preview-list">
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                          <img src="assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="public/template/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -462,7 +470,7 @@
                       </div>
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                          <img src="assets/images/faces/face8.jpg" alt="image" class="rounded-circle" />
+                          <img src="public/template/assets/images/faces/face8.jpg" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -476,7 +484,7 @@
                       </div>
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                          <img src="assets/images/faces/face9.jpg" alt="image" class="rounded-circle" />
+                          <img src="public/template/assets/images/faces/face9.jpg" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -490,7 +498,7 @@
                       </div>
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                          <img src="assets/images/faces/face11.jpg" alt="image" class="rounded-circle" />
+                          <img src="public/template/assets/images/faces/face11.jpg" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -512,20 +520,20 @@
                     <h4 class="card-title">Portfolio Slide</h4>
                     <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
                       <div class="item">
-                        <img src="assets/images/dashboard/Rectangle.jpg" alt="">
+                        <img src="public/template/assets/images/dashboard/Rectangle.jpg" alt="">
                       </div>
                       <div class="item">
-                        <img src="assets/images/dashboard/Img_5.jpg" alt="">
+                        <img src="public/template/assets/images/dashboard/Img_5.jpg" alt="">
                       </div>
                       <div class="item">
-                        <img src="assets/images/dashboard/img_6.jpg" alt="">
+                        <img src="public/template/assets/images/dashboard/img_6.jpg" alt="">
                       </div>
                     </div>
                     <div class="d-flex py-4">
                       <div class="preview-list w-100">
                         <div class="preview-item p-0">
                           <div class="preview-thumbnail">
-                            <img src="assets/images/faces/face12.jpg" class="rounded-circle" alt="">
+                            <img src="public/template/assets/images/faces/face12.jpg" class="rounded-circle" alt="">
                           </div>
                           <div class="preview-item-content d-flex flex-grow">
                             <div class="flex-grow">
@@ -672,7 +680,7 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © mafer.com 2024</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © agroindustria-mafer.com 2024</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
             </div>
           </footer>
@@ -680,4 +688,10 @@
         </div>
         <!-- main-panel ends -->
 
-<?php include('view/head/footer.php'); ?>
+<?php 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+include("public/template/head/footer.php"); 
+//include $_SERVER['DOCUMENT_ROOT'] .('/empresa-mafer/public/template/head/footer.php'); // Ruta absoluta desde la raíz del servidor
+?>
