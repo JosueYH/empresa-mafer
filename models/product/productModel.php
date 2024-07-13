@@ -1,12 +1,6 @@
 <?php
-
-/*ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-*/
-
-//require_once $_SERVER['DOCUMENT_ROOT'] . '../../database/connectionDatabase.php';
-require ('../../database/connectionDatabase.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/empresa-mafer/database/connectionDatabase.php';
+//require ('../../database/connectionDatabase.php');
 
 class productModel {
     private $db;
@@ -41,10 +35,17 @@ class productModel {
 }
 
 // Bloque para prueba directa al cargar el archivo en el navegador
-$modeloProductos = new productModel();
-$productos = $modeloProductos->obtenerProductos();
+//$modeloProductos = new productModel();
+//$productos = $modeloProductos->obtenerProductos();
 
-echo "<pre>";
-print_r($productos);
-echo "</pre>";
+//echo "<pre>";
+//print_r($productos);
+//echo "</pre>";
+
+//Para la prueba de Errores:
+/*
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+*/
 ?>

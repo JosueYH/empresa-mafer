@@ -22,16 +22,17 @@
 <body>
     <h1>Lista de Productos</h1>
     <?php
-    $productos = isset($productos) ? $productos : [];   // Asegúrate de que $productos está definido y es un array
-
-    // Añadir depuración 
-    echo "<pre>";
-    var_dump($productos); // Verifica el contenido de $productos
-    echo "</pre>";
+    if (!isset($productos)) {
+        echo "Error: No se han pasado productos a la vista.";
+    } else {
+        echo "<pre>";
+        var_dump($productos); // Verifica el contenido de $productos
+        echo "</pre>";
+    }
     ?>
     <table>
         <tr>
-            <th>Id</th>
+            <th>Identificador</th>
             <th>Nombre</th>
             <th>Categoría</th>
             <th>Tipo</th>

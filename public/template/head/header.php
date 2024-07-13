@@ -102,8 +102,8 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/empresa-mafer/view/maintenance/products/listproduct.php">Productos</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/empresa-mafer/view/maintenance/users/listuser.php">Usuarios</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/empresa-mafer/view/maintenance/product/listproduct.php">Productos</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/empresa-mafer/view/maintenance/user/listuser.php">Usuarios</a></li>
                 <li class="nav-item"> <a class="nav-link" href="/empresa-mafer/view/maintenance/admin/listadmin.php">Administradores</a></li>
                 <li class="nav-item"> <a class="nav-link" href="/empresa-mafer/public/template/pages/ui-features/buttons.html">Pedido</a></li>
                 <li class="nav-item"> <a class="nav-link" href="/empresa-mafer/public/template/pages/ui-features/buttons.html">Buttons</a></li>
